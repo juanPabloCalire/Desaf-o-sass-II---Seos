@@ -1,0 +1,28 @@
+.nosotrosin {
+    background-color: map-get($estilos,color );
+    border: solid;
+    padding: 35px;
+    margin: 0px 15px 0px 15px;
+    
+
+   
+    
+    text-align: center;
+
+    .nosotrosin__titulo {
+        padding: 15px 0px;
+    }
+
+    .nosotrosin__parrafo {
+
+        position: relative;
+        bottom: px;
+        margin-right: px;
+        width: px;
+        height: 300px;
+        background: rgb(230, 230, 240);
+        overflow: scroll;
+        text-align: center;
+    }
+
+}

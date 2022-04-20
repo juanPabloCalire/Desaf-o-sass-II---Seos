@@ -1,0 +1,42 @@
+.seccionFoto {
+    border: solid;
+    padding: 35px;
+    margin: 0px 15px 15px 15px;
+
+
+    @keyframes fondocolor {
+        0% {
+            background-color: white;
+        }
+
+        20% {
+            background-color: rgb(243, 243, 243);
+        }
+
+        40% {
+            background-color: rgb(235, 235, 235);
+        }
+
+        60% {
+            background-color: rgb(214, 211, 211);
+        }
+
+        80% {
+            background-color: rgb(238, 238, 238);
+        }
+
+        100% {
+            background-color: rgb(255, 255, 255);
+        }
+    }
+
+    animation-name: fondocolor;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
+
+    .espaldaBaguala {
+        padding: 20px 20px 20px 0px;
+    }
+}

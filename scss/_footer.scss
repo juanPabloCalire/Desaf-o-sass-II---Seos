@@ -1,0 +1,79 @@
+.pie {
+    border: solid;
+    padding: 15px;
+    margin: 15px;
+
+    background-color: rgb(241, 231, 231);
+
+    .pie__contacto {
+        text-align: center;
+        list-style-type: none;
+        margin-top: 50px;
+
+        ul {
+            list-style-type: none;
+            display: inline-block;
+
+            
+        }
+
+        li {
+            margin-top: 20px;
+            list-style-type: none;
+            display: inline-block;
+            
+            
+        
+        
+        }
+        .instaEnlace {
+            list-style-type: none;
+        
+        }
+
+       
+
+        .insta {
+            width: 50px;
+            list-style-type: none;
+
+        }
+       
+        
+
+
+    }
+
+    .pie__pago {
+
+        text-align: center;
+        margin-top: 50px;
+
+        article{
+            .textuno{
+                color: rgb(66, 25, 154);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: large;
+                background-color: rgb(221, 221, 234);
+            }
+            .textdos{
+                @extend .textuno;
+                background-color: rgb(203, 203, 224);
+            }
+            .texttres{
+                @extend .textuno;
+                background-color: rgb(148, 148, 190);
+
+            }
+            .textcuatro{
+                @extend .textuno;
+                background-color: rgb(113, 113, 158);
+
+            }
+        }
+
+
+
+    }
+
+}

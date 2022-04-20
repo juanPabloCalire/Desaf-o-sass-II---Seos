@@ -1,0 +1,530 @@
+/*--------------------INDEX--------------------*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{ 
+    font-size: 62,5%;
+    /*Cambiamos la etiqueta raíz, y ahora contamos de 10px en 10px*/
+}
+/*--------------HEADER INDEX---------------*/
+.contenedor{
+    width: 100%;
+    margin: 0px auto ;
+
+    display: grid;
+    
+    grid-template-columns: 0.40fr 0.50fr 0.25fr 0.25fr ;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr 0.1fr ; 
+    grid-template-areas: 
+    "navegador navegador navegador navegador"
+    "seccion seccion seccion seccion"
+    "main main main main"
+    "footer footer footer footer";
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+.cabecera{
+    grid-area: navegador;
+}
+.seccionFoto{
+    grid-area: seccion;
+}
+.nosotrosin{
+    grid-area: main;
+}
+.pie{
+    grid-area: footer;
+}
+
+/*--------------------------------------*/
+.imagenLogo{
+    width: 200px;
+     
+}
+.cabecera{
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    margin: 15px;
+    border: solid;   
+}
+/*----------section----------------*/
+@keyframes fondocolor {
+    0% {
+        background-color: white;
+    }
+
+    20% {
+        background-color: rgb(243, 243, 243);
+    }
+
+    40% {
+        background-color: rgb(235, 235, 235);
+    }
+
+    60% {
+        background-color: rgb(214, 211, 211);
+    }
+
+    80% {
+        background-color: rgb(238, 238, 238);
+    }
+
+    100% {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+
+.seccionFoto{
+    border: solid;
+    padding: 35px 35px 35px 50px;
+    margin: 0px 15px 15px 15px;
+
+    animation-name: fondocolor;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+.espaldaBaguala{
+    
+    padding: 20px 20px 20px 0px;  
+}
+/*----------main-------------------*/
+.nosotrosin{
+    border: solid;
+    padding: 35px;
+    margin: 0px 15px 0px 15px;;
+    text-align: center;
+}
+.nosotrosin__titulo{
+    padding: 15px 0px;
+}
+   
+
+.nosotrosin__parrafo{
+    
+    position: relative;
+    bottom: px;
+    margin-right:px;
+    width: px;
+    height: 300px;
+    background: rgb(230, 230, 240);
+    overflow: scroll;
+    text-align: center;
+}
+/*-----------footer-------------*/
+.pie{
+    border: solid;
+    padding: 15px;
+    margin: 15px;
+   
+    background-color: rgb(255, 255, 255);
+   
+}
+
+.insta{
+    width: 50px;
+    
+}
+.pie__contacto{
+  text-align: center;
+    list-style-type: none;
+    margin-top: 50px;
+    
+    
+}
+.pie__contacto ul{
+    list-style-type: none;
+}
+.pie__contacto li{
+    margin-top: 20px;
+}
+.pie__pago{
+    
+    text-align: center ;
+    margin-top: 50px;
+}
+
+
+/*--------------NOSOTROS------------------*/
+
+.contenedorNos{
+    width: 100%;
+    margin: 5px auto ;
+
+    display: grid;
+    
+    grid-template-columns: 0.40fr 0.50fr 0.25fr 0.25fr ;
+    grid-template-rows: 0.1fr 0.5fr  0.1fr ; 
+    grid-template-areas: 
+    "navegador navegador navegador navegador"
+    "seccion seccion seccion seccion"
+    "footer footer footer footer";*/
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.cabeceraNos{
+    grid-area: navegador;
+}
+
+.nosotrosNos{
+    grid-area: seccion;
+}
+.pieNos{
+    grid-area: footer;
+}
+
+/*------------NOSOTROS-HEADER------------*/
+
+.imagenLogoNos{
+    width: 200px;
+    
+}
+.cabeceraNos{
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    margin: 15px;
+    border: solid;
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+
+/*---------NOSOTROS-SECCION----------------*/
+.nosotrosNos{
+    border: solid;
+    padding: 35px;
+    margin: 15px;
+    text-align: center;
+
+    animation-name: fondocolor;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+.nosotrosNos__titulo{
+    padding: 15px 0px;
+}
+   
+
+.nosotrosNos__parrafo{
+    
+    position: relative;
+    background: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/*----------NOSOTROS-FOOTER---------------*/
+
+.pieNos{
+    border: solid;
+    padding: 15px;
+    margin: 15px;
+    
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.instaNos{
+    width: 50px;
+    
+}
+.pieNos__contacto{
+    
+    text-align: center;
+    list-style-type: none;
+    margin: 50px;
+    
+}
+.pieNos__contacto ul{
+    list-style-type: none;
+}
+.pieNos__contacto li {
+    margin-top: 20px;
+}
+.pieNos__pago{
+   
+    text-align: center;
+    margin: 50px;
+}
+
+
+/*------------PRENDAS--------------------------*/
+
+.button__Pre{
+    margin-bottom: 10px;
+}
+
+.contenedorNov{
+    width: 100%;
+    margin: 5px auto ;
+
+    display: grid;
+    
+    grid-template-columns: 0.40fr 0.50fr 0.25fr 0.25fr ;
+    grid-template-rows: 0.1fr 0.5fr  0.1fr ; 
+    grid-template-areas: 
+    "navegador navegador navegador navegador"
+    "galeria galeria galeria galeria"
+    "footer footer footer footer";
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.cabeceraNov{
+    grid-area: navegador;
+}
+
+.galeriaNov{
+    grid-area: galeria;
+}
+.pieNov{
+    grid-area: footer;
+}
+
+/*--------------HEADER-PRENDAS-------------*/
+.imagenLogoNov{
+    width: 200px;
+    
+    
+}
+.cabeceraNov{
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    margin: 15px;
+    border: solid;
+   
+
+    
+}
+.navegadorNov__lista{
+    
+    justify-content: center;
+    margin-top: 200px;
+    
+    
+}
+.navegadorNov__lista li{
+    display: inline-block;
+    padding: 15px;
+    
+    
+}
+.navegadorNov__lista li a{
+    text-decoration: none;
+}
+.navegadorNov__lista li:hover ul{
+    display: block;
+}
+
+.submenuNov {
+    display: none;
+    position: absolute;
+
+}
+.submenuNov li{
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*--------------MAIN-PRENDAS-------------*/
+.galeriaNov{
+    border: solid;
+    padding: 35px;
+    margin: 15px;
+
+    
+  
+}
+
+.galeriaNov__fotos{
+    
+    background-color: rgb(255, 255, 255);
+   
+    
+}
+.pie__nov{
+    text-align: center;
+}
+.galeriaNov__fotos:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+/*--------------FOOTER-PRENDAS-------------*/
+
+.pieNov{
+    border: solid;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    
+}
+.pieNov__contenedor{
+    display: flex;
+
+}
+.imagenFooterNov{
+    width: 250px;
+    margin-top: 0px;
+}
+.instaNov{
+    width: 50px;
+    
+}
+.pieNov__contacto{
+    margin: 100px;
+    text-align: center;
+    list-style-type: none;
+    
+    
+}
+.pieNov__contacto ul{
+    list-style-type: none;
+}
+.pieNov__pago{
+    margin: 100px;
+    text-align: center;
+}
+
+
+/*----------CONTACTO---------------------*/
+.contenedorCon{
+    width: 100%;
+    margin: 15px auto ;
+
+    display: grid;
+    
+    grid-template-columns: 0.40fr 0.50fr 0.25fr 0.25fr ;
+    grid-template-rows: 0.1fr 0.5fr  0.1fr ; 
+    grid-template-areas: 
+    "navegador navegador navegador navegador"
+    "seccion seccion seccion seccion"
+    "footer footer footer footer";
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.cabeceraCon{
+    grid-area: navegador;
+}
+
+.contactoCon{
+    grid-area: seccion;
+}
+.pieCon{
+    grid-area: footer;
+}
+
+/*----------HEADER-CONTACTO---------------*/
+.imagenLogoCon{
+    width: 200px;
+  
+    
+}
+.cabeceraCon{
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    margin: 0px 15px 0px 15px;;
+    border: solid;
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+
+/*----------SECTION-CONTACTO----------*/
+.contactoCon{
+    
+    border: solid;
+    padding: 35px;
+    margin: 15px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+
+animation-name: fondocolor;
+animation-duration: 4s;
+animation-timing-function: ease-in;
+animation-iteration-count: infinite;
+    
+}
+.contacto__titulo{
+    margin: 33px 33px 100px 0px;
+    
+}
+.botonSub{
+    background-color: rgb(249, 245, 245);
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0);
+}
+
+
+
+}
+.infoCon{
+    
+    height: 300px;
+     
+     
+     
+}
+.datos{
+    display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+
+}
+.datosCon__consulta{
+    margin: 30px;
+}
+/*----------CONTACTO-FOOTER----------------*/
+
+.pieCon{
+    border: solid;
+    padding: 15px;
+    margin: 0px 15px 0px 15px;;
+    
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.instaCon{
+    width: 50px;
+    
+}
+.pieCon__contacto{
+    margin-top: 50px;
+    text-align: center;
+    list-style-type: none;
+    
+    
+    
+}
+.pieCon__contacto ul{
+    list-style-type: none;
+}
+.pieCon__contacto li{
+    margin-top: 20px;
+}
+.pieCon__pago{
+    margin-top: 50px;
+    text-align: center;
+}
+
